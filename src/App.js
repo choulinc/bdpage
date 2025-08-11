@@ -166,7 +166,7 @@ const YouTubePage = () => {
       views: "852M",
       time: "3 周前",
       duration: "10:15",
-      thumbnail: `${process.env.PUBLIC_URL}/pic/clcl.jpg`
+      thumbnail: `${process.env.PUBLIC_URL}/pic/aabb.jpg`
     }
   ];
 
