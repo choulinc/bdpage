@@ -121,7 +121,7 @@ const YouTubePage = () => {
       views: "240K",
       time: "9 年前",
       duration: "4:27",
-      thumbnail: "/pic/mv.png"
+      thumbnail: `${process.env.PUBLIC_URL}/pic/mv.png`
     },
     {
       id: 2,
@@ -130,7 +130,7 @@ const YouTubePage = () => {
       views: "56K",
       time: "3 天前",
       duration: "15:32",
-      thumbnail: "/pic/peng.jpg"
+      thumbnail: `${process.env.PUBLIC_URL}/pic/peng.jpg`
     },
     {
       id: 3,
@@ -139,7 +139,7 @@ const YouTubePage = () => {
       views: "46M",
       time: "1 年前",
       duration: "2:30",
-      thumbnail: "/pic/fts.png"
+      thumbnail: `${process.env.PUBLIC_URL}/pic/fts.png`
     },
     {
       id: 4,
@@ -148,7 +148,7 @@ const YouTubePage = () => {
       views: "962M",
       time: "6 天前",
       duration: "25:42",
-      thumbnail: "/pic/cl.jpg"
+      thumbnail: `${process.env.PUBLIC_URL}/pic/cl.jpg`
     },
     {
       id: 5,
@@ -157,7 +157,7 @@ const YouTubePage = () => {
       views: "44K",
       time: "1 week ago",
       duration: "31:27",
-      thumbnail: "/pic/jpjp.png"
+      thumbnail: `${process.env.PUBLIC_URL}/pic/jpjp.png`
     },
     {
       id: 6,
@@ -166,7 +166,7 @@ const YouTubePage = () => {
       views: "852M",
       time: "3 周前",
       duration: "10:15",
-      thumbnail: "/pic/clcl.jpg"
+      thumbnail: `${process.env.PUBLIC_URL}/pic/clcl.jpg`
     }
   ];
 
@@ -174,7 +174,7 @@ const YouTubePage = () => {
     {
       id: 1,
       user: "John Mayer",
-      avatar: "/pic/JM.jpg",
+      avatar: `${process.env.PUBLIC_URL}/pic/JM.jpg`,
       time: "2 hours ago",
       text: "Insane 🔥🔥🔥, join my band plz",
       likes: 15
@@ -182,7 +182,7 @@ const YouTubePage = () => {
     {
       id: 2,
       user: "Fuji Kaze",
-      avatar: "/pic/fk.jpg",
+      avatar: `${process.env.PUBLIC_URL}/pic/fk.jpg`,
       time: "5 hours ago",
       text: "すげー！！！！",
       likes: 8
@@ -190,7 +190,7 @@ const YouTubePage = () => {
     {
       id: 3,
       user: "Elon Musk",
-      avatar: "/pic/em.webp",
+      avatar: `${process.env.PUBLIC_URL}/pic/em.webp`,
       time: "1 day ago",
       text: "STOP BEATING ME IN BILLIONAIRES LIST",
       likes: 3
@@ -204,7 +204,7 @@ const YouTubePage = () => {
         <div className="header-left">
           <Menu size={24} className="menu-icon" />
           <div className="youtube-logo">
-            <span className="logo-text"><img src='{`${process.env.PUBLIC_URL}/pic/ytlogo.webp' style={{
+            <span className="logo-text"><img src={`${process.env.PUBLIC_URL}/pic/ytlogo.webp`} style={{
                     width: '2vw',
                     height: 'auto',
                     objectFit: 'contain',
@@ -339,7 +339,7 @@ const YouTubePage = () => {
             
             <div className="comment-input">
               <img 
-                src="{`${process.env.PUBLIC_URL}/pic/aher.png" 
+                src={`${process.env.PUBLIC_URL}/pic/aher.png`} 
                 alt="Your Avatar" 
                 className="comment-avatar"
               />
@@ -421,19 +421,19 @@ const NetflixPage = () => {
   });
 
   const adventureContent = [
-    { id: 1, title: '超人', image: '{`${process.env.PUBLIC_URL}/pic/mv1.jpg', isNew: true },
-    { id: 2, title: '夜校女生', image: '{`${process.env.PUBLIC_URL}/pic/mv2.jpeg', isNew: true },
-    { id: 3, title: '絕命律師', image: '{`${process.env.PUBLIC_URL}/pic/mv3.JPG', isNew: false },
-    { id: 4, title: '柯南', image: '{`${process.env.PUBLIC_URL}/pic/mv4.jpg', isNew: false },
-    { id: 5, title: '白日夢冒險王', image: '{`${process.env.PUBLIC_URL}/pic/mv5.jpg', isNew: false },
-    { id: 6, title: '大賣空', image: '{`${process.env.PUBLIC_URL}/pic/mv6.webp', isNew: false }
+    { id: 1, title: '超人', image: `${process.env.PUBLIC_URL}/pic/mv1.jpg`, isNew: true },
+    { id: 2, title: '夜校女生', image: `${process.env.PUBLIC_URL}/pic/mv2.jpeg`, isNew: true },
+    { id: 3, title: '絕命律師', image: `${process.env.PUBLIC_URL}/pic/mv3.JPG`, isNew: false },
+    { id: 4, title: '柯南', image: `${process.env.PUBLIC_URL}/pic/mv4.jpg`, isNew: false },
+    { id: 5, title: '白日夢冒險王', image: `${process.env.PUBLIC_URL}/pic/mv5.jpg`, isNew: false },
+    { id: 6, title: '大賣空', image: `${process.env.PUBLIC_URL}/pic/mv6.webp`, isNew: false }
   ];
 
   const asianContent = [
-    { id: 1, title: 'JoJo 的奇妙冒險', image: '{`${process.env.PUBLIC_URL}/pic/mv11.webp', isNew: true, isTop10: true },
-    { id: 2, title: '水', image: '{`${process.env.PUBLIC_URL}/pic/mv12.jpeg', isNew: true, isTop10: true, isPopular: true },
-    { id: 3, title: '愛x 死x 機器人', image: '{`${process.env.PUBLIC_URL}/pic/mv13.webp', isNew: false },
-    { id: 4, title: '伊藤潤二狂熱：日本恐怖故事', image: '{`${process.env.PUBLIC_URL}/pic/mv14.jpeg', isNew: false },
+    { id: 1, title: 'JoJo 的奇妙冒險', image: `${process.env.PUBLIC_URL}/pic/mv11.webp`, isNew: true, isTop10: true },
+    { id: 2, title: '水', image: `${process.env.PUBLIC_URL}/pic/mv12.jpeg`, isNew: true, isTop10: true, isPopular: true },
+    { id: 3, title: '愛x 死x 機器人', image: `${process.env.PUBLIC_URL}/pic/mv13.webp`, isNew: false },
+    { id: 4, title: '伊藤潤二狂熱：日本恐怖故事', image: `${process.env.PUBLIC_URL}/pic/mv14.jpeg`, isNew: false },
     { id: 5, title: '成功路上', image: '', isNew: false },
     { id: 6, title: '拜六禮拜', image: '', isNew: true, isPopular: true }
   ];
@@ -847,7 +847,7 @@ const App = () => {
             <div className="section section-one">
               <h1>高寶寶生日快樂！</h1>
               <div className="pic-wrapper">
-                <img src='{`${process.env.PUBLIC_URL}/pic/aher.png'
+                <img src={`${process.env.PUBLIC_URL}/pic/aher.png`}
                   className='aher'
                   style={{
                     width: '14vw',
@@ -855,7 +855,7 @@ const App = () => {
                     objectFit: 'contain',
                   }}
                 />
-               <img src='{`${process.env.PUBLIC_URL}/pic/jp.png'
+               <img src={`${process.env.PUBLIC_URL}/pic/jp.png`}
                   className='jp'
                   style={{
                     width: '12vw',
@@ -863,7 +863,7 @@ const App = () => {
                     objectFit: 'contain',
                   }}
                 /> 
-                <img src='{`${process.env.PUBLIC_URL}/pic/kuromi.png'
+                <img src={`${process.env.PUBLIC_URL}/pic/kuromi.png`}
                   className='kuromi'
                   style={{
                     width: '12vw',
@@ -871,7 +871,7 @@ const App = () => {
                     objectFit: 'contain',
                   }}
                 /> 
-                <img src='{`${process.env.PUBLIC_URL}/pic/sum.png'
+                <img src={`${process.env.PUBLIC_URL}/pic/sum.png`}
                   className='sum'
                   style={{
                     width: '12vw',
@@ -880,7 +880,7 @@ const App = () => {
                   }}
                 /> 
                 <img
-                  src="{`${process.env.PUBLIC_URL}/pic/IMG_9873.png"
+                  src={`${process.env.PUBLIC_URL}/pic/IMG_9873.png`}
                   className="mainPic"
                   style={{
                     width: '25vw',
@@ -888,7 +888,7 @@ const App = () => {
                     objectFit: 'contain',
                   }}
                 />
-                <img src='{`${process.env.PUBLIC_URL}/pic/kimono.png'
+                <img src={`${process.env.PUBLIC_URL}/pic/kimono.png`}
                   className='kimono'
                   style={{
                     width: '8vw',
@@ -896,7 +896,7 @@ const App = () => {
                     objectFit: 'contain',
                   }}
                 />
-                <img src='{`${process.env.PUBLIC_URL}/pic/gt.png'
+                <img src={`${process.env.PUBLIC_URL}/pic/gt.png`}
                   className='gt'
                   style={{
                     width: '26vw',
@@ -904,7 +904,7 @@ const App = () => {
                     objectFit: 'contain',
                   }}
                 />
-                <img src='{`${process.env.PUBLIC_URL}/pic/usj.png'
+                <img src={`${process.env.PUBLIC_URL}/pic/usj.png`}
                   className='usj'
                   style={{
                     width: '15vw',
@@ -915,7 +915,7 @@ const App = () => {
               </div>
               <div className="arrow-wrapper">
                 <img
-                  src="{`${process.env.PUBLIC_URL}/down.svg"
+                  src={`${process.env.PUBLIC_URL}/down.svg`}
                   alt="Scroll down"
                   className="scroll-down-arrow"
                 />
@@ -927,7 +927,7 @@ const App = () => {
                 <h1 className='s2h1'>21-Year-Old Billionaire CEO Lv Kao Celebrates Her Birthday</h1>
                 <p>上億身家執行長 Lv Kao 近日在他的私人豪宅與私人遊艇舉辦慶生派對，並邀請知名歌手 John Mayer 、知名樂團 Polyphia、 Good Kid 現場開唱，場面十分壯觀。<br /><br />
                 Lv Kao 甚至大方在 Instagram 上曬出與億萬富翁網紅工程師兼知名搖滾樂團吉他手、音樂製作人、量化交易明星 Chilling 的合照， Chilling 還與知名樂團同台演出，此段影片一被發佈到 YouTube 上，就吸引了九兆觀看。</p>
-                <img src='{`${process.env.PUBLIC_URL}/pic/JM.jpg'
+                <img src={`${process.env.PUBLIC_URL}/pic/JM.jpg`}
                   className='JM'
                   style={{
                     width: '33vw',
